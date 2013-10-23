@@ -10,5 +10,3 @@ docker:
 docker-extras:
   pkg.installed:
     - name: linux-image-extra-{{grains['kernelrelease']}}
-    - require_in:
-      - pkgrepo: docker
