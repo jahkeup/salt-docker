@@ -7,6 +7,9 @@ docker:
     - name: lxc-docker
     - require:
       - pkgrepo: docker
+  service.running:
+    - name: docker
+
 docker-extras:
   pkg.installed:
     - name: linux-image-extra-{{grains['kernelrelease']}}
